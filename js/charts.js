@@ -27,12 +27,17 @@ Highcharts.setOptions(Highcharts.theme);
             },
             title: {
                 text: 'Alternativa Escolhida por grupo de respondentes',
-                align: 'left',
+                align: 'center',
+            },
+            xAxis: {
+                title: {
+                    text: 'Grupos'
+                }
             },
             yAxis: {
                 allowDecimals: true,
                 title: {
-                    text: 'Units'
+                    text: 'Porcentagem'
                 }
             }
         };
@@ -66,7 +71,7 @@ Highcharts.setOptions(Highcharts.theme);
             },
             title: {
                 text: 'Porcentagem de respondentes que escolheram cada alternativa',
-                align: 'left',
+                align: 'center',
             }
         };
 
