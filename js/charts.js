@@ -75,7 +75,15 @@ Highcharts.setOptions(Highcharts.theme);
             },
             legend: {
                 enabled: false
-            }
+            },
+            plotOptions: {
+                column: {
+                    dataLabels: {
+                        enabled: true,
+                    },
+                    enableMouseTracking: false
+                }
+            },
         };
 
         $('#bar-chart').highcharts(Highcharts.merge(options));

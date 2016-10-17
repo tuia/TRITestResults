@@ -27,8 +27,8 @@ h4, .highcharts-title tspan {
 /* EXAM HEADER */
 .navbar-title {
   display: block;
-  margin: 12px 0 0 180px;
-  width: calc(100% - 180px);
+  margin: 12px 0 0 185px;
+  width: calc(100% - 185px);
 }
 .navbar-title h1 {
   font-size: 20px;
@@ -64,7 +64,7 @@ h4, .highcharts-title tspan {
   left: 0;
   z-index: 1000;
   display: block;
-  padding: 0 20px 20px;
+  padding: 0 0;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   background-color: #eeeeee;
@@ -93,7 +93,7 @@ h4, .highcharts-title tspan {
   margin-left: 170px;
 }
 .main .item-container {
-  padding: 20px 40px 40px;
+  padding: 20px 30px 40px;
   background: #f8f8f8;
 }
 .main .item-container .page-header{
@@ -101,6 +101,13 @@ h4, .highcharts-title tspan {
 }
 .main .item-analysis {
   padding: 40px;  
+}
+.main .item-analysis .col-xs-8{
+  text-align: center;
+  color: #999999;
+}
+.main .item-analysis .col-xs-8 h4{
+  color: #333
 }
 
 
