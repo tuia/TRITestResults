@@ -72,6 +72,9 @@ Highcharts.setOptions(Highcharts.theme);
             title: {
                 text: 'Porcentagem de respondentes que escolheram cada alternativa',
                 align: 'center',
+            },
+            legend: {
+                enabled: false
             }
         };
 
