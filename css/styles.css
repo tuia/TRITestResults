@@ -21,12 +21,20 @@ h4 + .intro {
   color: #999999;
 }
 
+h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
 
 
 /* NAVBAR */
 .navbar-fixed-top {
   box-shadow: 1px 0 2px rgba(0,0,0,.2);
   background: #FFFFFF;
+}
+.navbar-fixed-top .navbar-nav > li > a {
+  padding: 28px 15px;
 }
 .navbar-brand {
   position: relative;
@@ -39,10 +47,13 @@ h4 + .intro {
 }
 
 /* EXAM HEADER */
+.navbar-header {
+  float: left;
+}
 .navbar-title {
   display: block;
-  margin: 12px 0 0 185px;
-  width: calc(100% - 185px);
+  margin: 12px 0 0 20px;
+  float: left;
 }
 .navbar-title h1 {
   font-size: 20px;
@@ -344,14 +355,20 @@ h4 + .intro {
   flex-wrap: wrap;
 }
 .competence-group {
-  background: #f8f8f8;
+  margin-bottom: 40px;
+  width: 300px;
+}
+.competence-group .competence-chart{
+  background: #EEE;
   padding: 20px;
   display: flex;
   text-align: center;
   position: relative;
-  width: 300px;
   height: 300px;
-  margin-bottom: 40px;
+}
+.competence-group .competence-data {
+  background: #f8f8f8;
+  padding: 20px;
 }
 .competence-group .competence {
   background: #86DA54;
@@ -367,7 +384,6 @@ h4 + .intro {
   color: #FFFFFF
 }
 .hability {
-  background: #45BFF4;
   display: flex;
   border-radius: 50px;
   width: 50px;
@@ -427,20 +443,29 @@ h4 + .intro {
 .competence.competence-three {background: #7E56A5}
 .competence.competence-four {background: #56317B}
 
-.hability.hability-one {background: #01A6C6}
-.hability.hability-two {background: #058BAA}
-.hability.hability-three {background: #086E8B}
-.hability.hability-four {background: #0A4D68}
-.hability.hability-five {background: #CD4325}
-.hability.hability-six {background: #E26428}
-.hability.hability-seven {background: #F68129}
-.hability.hability-eight {background: #F49D39}
-.hability.hability-nine {background: #F1B747}
-.hability.hability-ten {background: #F0D055}
-.hability.hability-eleven {background: #B4C671}
-.hability.hability-twelve {background: #79BB8E}
-.hability.hability-thirteen {background: #3DB1AA}
+.hability-one {background: #01A6C6}
+.hability-two {background: #058BAA}
+.hability-three {background: #086E8B}
+.hability-four {background: #0A4D68}
+.hability-five {background: #CD4325}
+.hability-six {background: #E26428}
+.hability-seven {background: #F68129}
+.hability-eight {background: #F49D39}
+.hability-nine {background: #F1B747}
+.hability-ten {background: #F0D055}
+.hability-eleven {background: #B4C671}
+.hability-twelve {background: #79BB8E}
+.hability-thirteen {background: #3DB1AA}
 
+.progress-container {
+  margin: 0 auto 20px;
+}
+.progress-container h5{
+  margin-bottom: 5px;
+}
+.progress-container .progress {
+  margin-bottom: 5px
+}
 
 
 
