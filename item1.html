@@ -27,7 +27,7 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -36,7 +36,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="img/logo-inverse.png"></a>
+          <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
         </div>
         <div class="navbar navbar-title">
           <h1>Faculdade de Ciências Médicas de Minas Gerais</h1>
@@ -45,70 +45,111 @@
       </div>
     </nav>
 
+
+
+    <!-- SIDEBAR -->
     <div class="sidebar">
-      <ul class="nav nav-sidebar">
-        <li><a href="visao-geral.html">Visão geral</a></li>
-        <li class="active"><a href="item1.html">Item 1</a></li>
-        <li><a href="item2.html">Item 2</a></li>
-        <li><a href="item3.html">Item 3</a></li>
-        <li><a href="item4.html">Item 4</a></li>
-        <li><a href="item5.html">Item 5</a></li>
-        <li><a href="item6.html">Item 6</a></li>
-        <li><a href="item7.html">Item 7</a></li>
-        <li><a href="item8.html">Item 8</a></li>
-        <li><a href="item9.html">Item 9</a></li>
-        <li><a href="item10.html">Item 10</a></li>
-        <li><a href="item11.html">Item 11</a></li>
-        <li><a href="item12.html">Item 12</a></li>
-        <li><a href="item13.html">Item 13</a></li>
-        <li><a href="item14.html">Item 14</a></li>
-        <li><a href="item15.html">Item 15</a></li>
-        <li><a href="item16.html">Item 16</a></li>
-        <li><a href="item17.html">Item 17</a></li>
-        <li><a href="item18.html">Item 18</a></li>
-        <li><a href="item19.html">Item 19</a></li>
-        <li><a href="item20.html">Item 20</a></li>
-        <li><a href="item21.html">Item 21</a></li>
-        <li><a href="item22.html">Item 22</a></li>
-        <li><a href="item23.html">Item 23</a></li>
-        <li><a href="item24.html">Item 24</a></li>
-        <li><a href="item25.html">Item 25</a></li>
-        <li><a href="item26.html">Item 26</a></li>
-        <li><a href="item27.html">Item 27</a></li>
-        <li><a href="item28.html">Item 28</a></li>
-        <li><a href="item29.html">Item 29</a></li>
-        <li><a href="item30.html">Item 30</a></li>
-        <li><a href="item31.html">Item 31</a></li>
-        <li><a href="item32.html">Item 32</a></li>
-        <li><a href="item33.html">Item 33</a></li>
-        <li><a href="item34.html">Item 34</a></li>
-        <li><a href="item35.html">Item 35</a></li>
-        <li><a href="item36.html">Item 36</a></li>
-        <li><a href="item37.html">Item 37</a></li>
-        <li><a href="item38.html">Item 38</a></li>
-        <li><a href="item39.html">Item 39</a></li>
-        <li><a href="item40.html">Item 40</a></li>
-        <li><a href="item41.html">Item 41</a></li>
-        <li><a href="item42.html">Item 42</a></li>
-        <li><a href="item43.html">Item 43</a></li>
-        <li><a href="item44.html">Item 44</a></li>
-        <li><a href="item45.html">Item 45</a></li>
-        <li><a href="item46.html">Item 46</a></li>
-        <li><a href="item47.html">Item 47</a></li>
-        <li><a href="item48.html">Item 48</a></li>
-        <li><a href="item49.html">Item 49</a></li>
-        <li><a href="item50.html">Item 50</a></li>
-        <li><a href="item51.html">Item 51</a></li>
-        <li><a href="item52.html">Item 52</a></li>
-        <li><a href="item53.html">Item 53</a></li>
-        <li><a href="item54.html">Item 54</a></li>
-        <li><a href="item55.html">Item 55</a></li>
-        <li><a href="item56.html">Item 56</a></li>
-        <li><a href="item57.html">Item 57</a></li>
-        <li><a href="item58.html">Item 58</a></li>
-        <li><a href="item59.html">Item 59</a></li>
-        <li><a href="item60.html">Item 60</a></li>
-      </ul>
+
+      <a href="visao-geral.html" class="nav-link">
+        <i class="fa fa-globe"></i> Visão geral
+      </a>
+
+      <div class="panel-group" id="accordionMenu" role="tablist">
+        <div class="panel panel-inverse">
+          <div class="panel-heading">
+            <span class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordionMenu" href="#collapseItems">
+                <i class="fa fa-list-ul"></i> Itens
+              </a>
+            </span>
+          </div>
+          <div id="collapseItems" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <ul class="nav nav-sidebar">
+                <li class="active"><a href="item1.html">Item 1</a></li>
+                <li><a href="item2.html">Item 2</a></li>
+                <li><a href="item3.html">Item 3</a></li>
+                <li><a href="item4.html">Item 4</a></li>
+                <li><a href="item5.html">Item 5</a></li>
+                <li><a href="item6.html">Item 6</a></li>
+                <li><a href="item7.html">Item 7</a></li>
+                <li><a href="item8.html">Item 8</a></li>
+                <li><a href="item9.html">Item 9</a></li>
+                <li><a href="item10.html">Item 10</a></li>
+                <li><a href="item11.html">Item 11</a></li>
+                <li><a href="item12.html">Item 12</a></li>
+                <li><a href="item13.html">Item 13</a></li>
+                <li><a href="item14.html">Item 14</a></li>
+                <li><a href="item15.html">Item 15</a></li>
+                <li><a href="item16.html">Item 16</a></li>
+                <li><a href="item17.html">Item 17</a></li>
+                <li><a href="item18.html">Item 18</a></li>
+                <li><a href="item19.html">Item 19</a></li>
+                <li><a href="item20.html">Item 20</a></li>
+                <li><a href="item21.html">Item 21</a></li>
+                <li><a href="item22.html">Item 22</a></li>
+                <li><a href="item23.html">Item 23</a></li>
+                <li><a href="item24.html">Item 24</a></li>
+                <li><a href="item25.html">Item 25</a></li>
+                <li><a href="item26.html">Item 26</a></li>
+                <li><a href="item27.html">Item 27</a></li>
+                <li><a href="item28.html">Item 28</a></li>
+                <li><a href="item29.html">Item 29</a></li>
+                <li><a href="item30.html">Item 30</a></li>
+                <li><a href="item31.html">Item 31</a></li>
+                <li><a href="item32.html">Item 32</a></li>
+                <li><a href="item33.html">Item 33</a></li>
+                <li><a href="item34.html">Item 34</a></li>
+                <li><a href="item35.html">Item 35</a></li>
+                <li><a href="item36.html">Item 36</a></li>
+                <li><a href="item37.html">Item 37</a></li>
+                <li><a href="item38.html">Item 38</a></li>
+                <li><a href="item39.html">Item 39</a></li>
+                <li><a href="item40.html">Item 40</a></li>
+                <li><a href="item41.html">Item 41</a></li>
+                <li><a href="item42.html">Item 42</a></li>
+                <li><a href="item43.html">Item 43</a></li>
+                <li><a href="item44.html">Item 44</a></li>
+                <li><a href="item45.html">Item 45</a></li>
+                <li><a href="item46.html">Item 46</a></li>
+                <li><a href="item47.html">Item 47</a></li>
+                <li><a href="item48.html">Item 48</a></li>
+                <li><a href="item49.html">Item 49</a></li>
+                <li><a href="item50.html">Item 50</a></li>
+                <li><a href="item51.html">Item 51</a></li>
+                <li><a href="item52.html">Item 52</a></li>
+                <li><a href="item53.html">Item 53</a></li>
+                <li><a href="item54.html">Item 54</a></li>
+                <li><a href="item55.html">Item 55</a></li>
+                <li><a href="item56.html">Item 56</a></li>
+                <li><a href="item57.html">Item 57</a></li>
+                <li><a href="item58.html">Item 58</a></li>
+                <li><a href="item59.html">Item 59</a></li>
+                <li><a href="item60.html">Item 60</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-inverse">
+          <div class="panel-heading">
+            <span class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseAlunos">
+                <i class="fa fa-graduation-cap"></i> Alunos
+              </a>
+            </span>
+          </div>
+          <div id="collapseAlunos" class="panel-collapse collapse" role="tabpanel" >
+            <div class="panel-body">
+              <ul class="nav nav-sidebar">
+                <li><a href="item1.html">Ana Carolina Matos Gomes Fonseca</a></li>
+                <li><a href="item1.html">João Paulo César de Oliveira</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
     <div class="main">
 
@@ -136,7 +177,9 @@
 
         <div class="row">
           <div class="col-xs-4 placeholder">
+
             <h4>Índice de dificuldade</h4>
+
             <i class="fa fa-check"></i>
             <h5 class="text-success">fácil</h5>
             <span class="text-muted"><strong>83%</strong> de acertos</span>
