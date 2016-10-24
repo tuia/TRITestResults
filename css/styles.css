@@ -457,16 +457,59 @@ h5 {
 .hability-twelve {background: #79BB8E}
 .hability-thirteen {background: #3DB1AA}
 
+
+/* PROGRESS */
 .progress-container {
-  margin: 0 auto 20px;
+  margin: 0 auto 30px;
 }
 .progress-container h5{
-  margin-bottom: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #EEE;
+}
+.progress-container p, .progress-container p small{
+  color: #999999;
+}
+.progress-container p small {
+  display: block;
 }
 .progress-container .progress {
   margin-bottom: 5px
 }
+.progress-container .progress + p{
+  color: #333;
+  text-align: center;
+}
 
+.progress-container .progress .progress-bar {
+    -moz-animation-name: animateBar;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: .4s;
+
+    -webkit-animation-name: animateBar;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: .4s;
+
+    animation-name: animateBar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .4s;
+}
+
+@-moz-keyframes animateBar {
+    0% {-moz-transform: translateX(-100%);}
+    100% {-moz-transform: translateX(0);}
+}
+@-webkit-keyframes animateBar {
+    0% {-webkit-transform: translateX(-100%);}
+    100% {-webkit-transform: translateX(0);}
+}
+@keyframes animateBar {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
 
 
 /* POPOVER */
