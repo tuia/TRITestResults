@@ -52,14 +52,31 @@
 
 
 
+
     <!-- SIDEBAR -->
     <div class="sidebar">
-
-      <a href="visao-geral.html" class="nav-link">
-        <i class="fa fa-globe"></i> Visão geral
-      </a>
-
       <div class="panel-group" id="accordionMenu" role="tablist">
+        <div class="panel panel-inverse">
+          <div class="panel-heading">
+            <span class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordionMenu" href="#collapseGeneral">
+                <i class="fa fa-globe"></i> Visão geral
+              </a>
+            </span>
+          </div>
+          <div id="collapseGeneral" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <ul class="nav nav-sidebar">
+                <li><a href="resumo.html">Resumo</a></li>
+                <li><a href="estrutura.html">Estrutura de avaliação</a></li>
+                <li><a href="resultados-gerais.html">Resultados gerais</a></li>
+                <li><a href="desempenho-por-item.html">Desempenho dos alunos por item</a></li>
+                <li><a href="desempenho-por-habilidade.html">Desempenho por habilidade</a></li>
+                <li><a href="dissertativas.html">Dissertativas</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="panel panel-inverse">
           <div class="panel-heading">
             <span class="panel-title">
@@ -80,25 +97,9 @@
             </div>
           </div>
         </div>
-        <div class="panel panel-inverse">
-          <div class="panel-heading">
-            <span class="panel-title">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseAlunos">
-                <i class="fa fa-graduation-cap"></i> Alunos
-              </a>
-            </span>
-          </div>
-          <div id="collapseAlunos" class="panel-collapse collapse" role="tabpanel" >
-            <div class="panel-body">
-              <ul class="nav nav-sidebar">
-                <li><a href="ana-carolina.html">Ana Carolina Matos Gomes Fonseca</a></li>
-                <li><a href="item1.html">João Paulo César de Oliveira</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+
 
 
 
@@ -129,20 +130,17 @@
       <div class="item-analysis">
 
         <div class="row">
-          <div class="col-xs-4 placeholder">
+          <div class="col-xs-6 placeholder">
             <h4>Índice de dificuldade</h4>
             <i class="fa fa-check"></i>
             <h5 class="text-success">fácil</h5>
             <span class="text-muted"><strong>83%</strong> de acertos</span>
           </div>
-          <div class="col-xs-8">
+          <div class="col-xs-6 text-center">
             <h4>Comentários</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>O índice de dificuldade refere-se à proporção de respostas corretas ao item.</p>
+            <p>Quanto menor a proporção de acertos, maior o índice de dificuldade.</p>
+            <p>Quanto maior a proporção de acertos, menor o índice de dificuldade.</p>
           </div>
         </div>
 
@@ -216,8 +214,8 @@
                 <tr>
                   <th>Alternativa</th>
                   <th>Dif</th>
-                  <th>Bisserial</th>
-                  <th>Discrim</th>
+                  <th>Bisserial <i class="fa fa-info-circle hastooltip" data-toggle="tooltip" title="O Coeficiente Bisserial deve ser postivo e alto (considerado bom em torno de 0,30) no Gabarito (alternativa correta) e negativo nos distratores (demais alternativas), devido ao fato de que o Bisserial é a correlação entre a resposta do indivíduo ao item e o seu desempenho (número de acertos) na prova como um todo.  Assim, espera-se que os alunos que tiveram um bom desempenho tenham escolhido o Gabarito como a resposta certa."></i></th>
+                  <th>Discrim <i class="fa fa-info-circle hastooltip" data-toggle="tooltip" title="Espera-se que o Indice de discriminação seja positivo e alto (quanto maior, melhor) para o Gabarito e negativo e baixo para os distratores. O índice de discriminação é a diferença entre a porcentagem de escolha na alternativa, para o grupo que obteve maior desempenho e o grupo que obteve menor desempenho no teste, portanto espera-se que o grupo com maior desempenho tenha escolhido em maior porcentagem a alternativa correta. "></i></th>
                 </tr>
               </thead>
               <tbody>
@@ -287,6 +285,7 @@
     <script src="js/highcharts.js"></script>
     <script src="js/data.js"></script>
     <script src="js/charts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -4,4 +4,6 @@
 $('[data-toggle="popover"').popover({
 	placement: 'top'
 });
-$('[data-toggle="popover"').click(function(e) { e.preventDefault(); })
+$('[data-toggle="popover"').click(function(e) { e.preventDefault(); });
+
+$('[data-toggle="tooltip"]').tooltip();
