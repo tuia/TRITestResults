@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Visão Geral</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet"> 
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+        </div>
+        <div class="navbar navbar-title">
+          <h1>Faculdade de Ciências Médicas de Minas Gerais</h1>
+          <h2><span class="label label-primary">Graduação em Medicina</span> Simulado Anasem - Avaliação Seriada dos Estudantes de Medicina</h2>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Roberta de Assis Braga <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Meu resultado</a></li>
+              <li><a href="#">Configurações</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">sair</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="panel-group" id="accordionMenu" role="tablist">
+        <div class="panel panel-inverse">
+          <div class="panel-heading">
+            <span class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordionMenu" href="#collapseGeneral">
+                <i class="fa fa-globe"></i> Visão geral
+              </a>
+            </span>
+          </div>
+          <div id="collapseGeneral" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <ul class="nav nav-sidebar">
+                <li><a href="resumo.html">Resumo</a></li>
+                <li><a href="estrutura.html">Estrutura de avaliação</a></li>
+                <li><a href="resultados-gerais.html">Resultados gerais</a></li>
+                <li class="active"><a href="desempenho-por-item.html">Desempenho dos alunos por item</a></li>
+                <li><a href="desempenho-por-habilidade.html">Desempenho por habilidade</a></li>
+                <li><a href="dissertativas.html">Dissertativas</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-inverse">
+          <div class="panel-heading">
+            <span class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordionMenu" href="#collapseItems">
+                <i class="fa fa-list-ul"></i> Itens
+              </a>
+            </span>
+          </div>
+          <div id="collapseItems" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <ul class="nav nav-sidebar">
+                <li><a href="item1.html">Item 1</a></li>
+                <li><a href="item2.html">Item 2</a></li>
+                <li><a href="item3.html">Item 3</a></li>
+                <li><a href="item4.html">Item 4</a></li>
+                <li><a href="item5.html">Item 5</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+      <div class="item-container">
+        <h3 class="page-header">Desempenho dos alunos por item</h3>
+        <p>Relação dos conteúdos abordados no simulado de acordo com os desempenhos dos alunos</p>
+      </div>
+
+      <div class="item-analysis">
+
+        <div class="item-analysis-group">
+          <h4>Desempenho insuficiente</h4>
+          <p class="subhead">Os alunos obtiveram desempenho <strong>INSUFICIENTE</strong>(percentual de acerto entre 29,10% a 0%) nos itens:</p>
+
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr class="danger">
+                  <th>Itens</th>
+                  <th>35 </th>
+                  <th>42 </th>
+                  <th>34 </th>
+                  <th>49 </th>
+                  <th>31 </th>
+                  <th>41 </th>
+                  <th>44 </th>
+                  <th>36 </th>
+                  <th>47 </th>
+                  <th>11 </th>
+                  <th>19 </th>
+                  <th>39</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Percentual de Acerto</td>
+                  <td>29,1</td>
+                  <td>27,3</td>
+                  <td>25,5</td>
+                  <td>21,8</td>
+                  <td>12,7</td>
+                  <td>12,7</td>
+                  <td>9,1</td>
+                  <td>5,5</td>
+                  <td>3,6</td>
+                  <td>1,8</td>
+                  <td>1,8</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Esses itens, são consideradas difíceis pelos alunos, e envolvem a compreensão e o reconhecimento dos seguintes elementos</p>
+          <ul>
+            <li>Do mecanismo de contração muscular</li>
+            <li>Do epitélio e dos seus tipos</li>
+            <li>Das limitações dos estudos ecológicos</li>
+            <li>Do comportamento das taxas de mortalidade, morbidade e de letalidade com aumento das notificações dos casos de difteria</li>
+            <li>Do cálculo do risco relativo e do risco atribuível com dados de um estudo de coorte</li>
+            <li>Do genograma de uma família nuclear biparental</li>
+            <li>Dos setores do SUS responsáveis pelos recursos destinados ao custeio dos transplantes</li>
+            <li>Das atribuições do agente comunitário de saúde</li>
+            <li>Dos princípios e diretrizes do SUS</li>
+            <li>Do Código de Ética Médica no comportamento do médico descrito em um caso</li>
+            <li>Da escolha de um possível estudo frente a vários registros apresentados</li>
+            <li>Da interpretação de um risco relativo em uma dada situação</li>
+          </ul>
+        </div>
+
+
+        <div class="item-analysis-group">
+          <h4>Desempenho médio</h4>
+          <p class="subhead">Os alunos mostraram desempenho <strong>MÉDIO</strong> que pode ser melhorado nes itens (percentual de acerto entre 69,10 a 30,9% - ordem decrescente):</p>
+
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr class="warning">
+                  <th>Itens</th>
+                  <th>29 </th>
+                  <th>58 </th>
+                  <th>13 </th>
+                  <th>18 </th>
+                  <th>14 </th>
+                  <th>24 </th>
+                  <th>01 </th>
+                  <th>02 </th>
+                  <th>09 </th>
+                  <th>26 </th>
+                  <th>16 </th>
+                  <th>25 </th>
+                  <th>45 </th>
+                  <th>30 </th>
+                  <th>04 </th>
+                  <th>46 </th>
+                  <th>20 </th>
+                  <th>37 </th>
+                  <th>27 </th>
+                  <th>43 </th>
+                  <th>10 </th>
+                  <th>33 </th>
+                  <th>17 </th>
+                  <th>15 </th>
+                  <th>21</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Percentual de Acerto</td>
+                  <td>69,1</td>
+                  <td>69,1</td>
+                  <td>67,3</td>
+                  <td>60</td>
+                  <td>58,2</td>
+                  <td>58,2</td>
+                  <td>56,4</td>
+                  <td>56,4</td>
+                  <td>56,4</td>
+                  <td>54,5</td>
+                  <td>50,9</td>
+                  <td>50,9</td>
+                  <td>49,1</td>
+                  <td>47,3</td>
+                  <td>45,5</td>
+                  <td>45,5</td>
+                  <td>44</td>
+                  <td>43,6</td>
+                  <td>41,8</td>
+                  <td>40</td>
+                  <td>36,4</td>
+                  <td>36,4</td>
+                  <td>34,5</td>
+                  <td>30,9</td>
+                  <td>30,9</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Nesses itens os alunos devem mostrar conhecimento e identificação</p>
+          <ul>
+            <li>Da preservação das funções dos músculos</li>
+            <li>Da anatomia do ureter onde o cálculo renal pode causar obstrução</li>
+            <li>Da anatomia e da topografia do músculo cardíaco</li>
+            <li>Do comportamento do organismo em situação de desidratação e hiper-hidratação</li>
+            <li>Das propriedades dos aminoácidos mostrados em representação gráfica</li>
+            <li>Do comportamento do paratormônio produzido pelas paratireóides e suas funções</li>
+            <li>Do comportamento do músculo cardíaco em relação às fases do ciclo cardíaco</li>
+            <li>Dos efeitos fisiológicos na síndrome de burnout</li>
+            <li>Das organelas envolvidas na disfunção apresentada pela síndrome de zellweger</li>
+            <li>Do processo de divisão celular (mitose)</li>
+            <li>De defeitos do dna mitocondrial de neuropatia óptica hereditária de lebert por meio do heredograma do paciente</li>
+            <li>Das células destruídas na síndrome de guillen barret</li>
+            <li>Das terminações nervosas da pele que permitem a detecção de seis impressões táteis</li>
+            <li>Do padrão zigótico de gêmeos por diagnóstico molecular</li>
+            <li>Do papel teratogênico no desenvolvimento de um embrião</li>
+            <li>Da anatomia do sistema genital masculino</li>
+            <li>Da deficiência de vitamina a</li>
+            <li>Dos modelos de raciocínio do processo saúde-doença</li>
+            <li>Do modelo de dahlgreen & whitehead para o estudo dos determinantes sociais e seus fatores</li>
+            <li>Da incidência média esperada dada a sua definição</li>
+            <li>Dos elementos da ferramenta de acesso à família practice</li>
+            <li>Das bases do modelo de atenção à saúde</li>
+            <li>Dos programas financiados pelo piso de atenção básica (pab)</li>
+            <li>Dos fatores associados ao tamanho de uma amostra</li>
+            <li>Da interpretação do resultado de um teste qui-quadrado</li>
+            <li>Da doença sífilis</li>
+          </ul>
+        </div>
+
+        <div class="item-analysis-group">
+          <h4>Desempenho bom</h4>
+          <p class="subhead">Os alunos mostraram desempenho <strong>BOM</strong> (percentual de acerto de 100 a 70,9% - ordem decrescente) nos itens:</p>
+
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr class="success">
+                  <th>Itens</th>
+                  <th>23</th>   
+                  <th>56</th>   
+                  <th>54</th>   
+                  <th>12</th>   
+                  <th>38</th>   
+                  <th>50</th>   
+                  <th>51</th>   
+                  <th>57</th>   
+                  <th>22</th>   
+                  <th>32</th>   
+                  <th>55</th>   
+                  <th>28</th>   
+                  <th>08</th>   
+                  <th>40</th>   
+                  <th>06</th>   
+                  <th>48</th>   
+                  <th>59</th>   
+                  <th>07</th>   
+                  <th>03</th>   
+                  <th>52</th>   
+                  <th>53</th>   
+                  <th>60</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Percentual de Acerto</td>                
+                  <td>100</td>
+                  <td>98,2</td>
+                  <td>94,5</td>
+                  <td>90,9</td>
+                  <td>90,9</td>
+                  <td>90,9</td>
+                  <td>90,9</td>
+                  <td>90,9</td>
+                  <td>85,5</td>
+                  <td>85,5</td>
+                  <td>85,5</td>
+                  <td>84</td>
+                  <td>80</td>
+                  <td>76,4</td>
+                  <td>74,5</td>
+                  <td>74,5</td>
+                  <td>74,5</td>
+                  <td>72,7</td>
+                  <td>70,9</td>
+                  <td>70,9</td>
+                  <td>70,9</td>
+                  <td>70,9</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Nestes itens os alunos mostraram que dominam o reconhecimento:</p>
+          <ul>
+            <li>De localização da curvatura gástrica (menor, maior)</li>
+            <li>Das vias metabólicas e papéis específicos nos tecidos do corpo humano</li>
+            <li>Do comportamento da acidose frente o equilíbrio ácido-base</li>
+            <li>Do comportamento da medida das enzimas plasmáticas no monitoramento de lesão ou proliferação celular</li>
+            <li>Do comportamento das pressões pleural e alveolar em situação de expansão pulmonar</li>
+            <li>Do mecanismo de hipersensibilidade associado aos quadros de edemas de glote, labial e palpebral</li>
+            <li>Das células que participam da resposta imune adaptativa</li>
+            <li>Dos fatores determinantes do processo saúde-doença</li>
+            <li>Do cálculo do risco relativo num estudo epidemiológico de coorte</li>
+            <li>Das características de um ensino inovador na medicina</li>
+            <li>Das ações de saúde primárias, secundárias e terciárias</li>
+            <li>Das características do processo de trabalho das equipes de atenção básica</li>
+            <li>Da distância entre uma fonte de radiação ionizante e o indivíduo, descrita a lei do inverso do quadrado da distância</li>
+            <li>Da situação da saúde pública em época anterior à criação do sus</li>
+            <li>Das políticas de saúde no brasil na república velha, na era vargas, no autoritarismo e na nova república</li>
+            <li>Dos símbolos dos avisos de segurança presos aos frascos de reagentes</li>
+            <li>Do microrganismo e da forma de transmissão diante de uma imagem de microscópio e o quadro apresentado pelo paciente</li>
+            <li>Do agente etiológico provável, suas fases clínicas e forma de prevenção de uma doença endêmica dados os sintomas dos pacientes e a foto de um inseto</li>
+            <li>Do ciclo de transmissão e reconhecimento da malária a partir de um esquema dado</li>
+            <li> do comportamento de um agente patogênico cujo ciclo causador dos sinais e sintomas mostrados em um caso está representado em um desenho</li>
+            <li>Da esquistossomose mansônica nas formas crônica e aguda</li>
+          </ul>
+        </div>
+
+    </div>
+
+    <!--/SRCIPTS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

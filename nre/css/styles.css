@@ -1,0 +1,228 @@
+
+
+/* LAYOUT */
+
+.container-fluid {
+	padding: 0 5vw;
+}
+
+
+/* COLOR-PALLETE */
+
+.competence-one {background: #CDA0FA}
+.competence-two {background: #A57BD0}
+.competence-three {background: #7E56A5}
+.competence-four {background: #56317B}
+
+.panel-heading.hability-one, .hability-one {background: #01A6C6}
+.panel-heading.hability-two, .hability-two {background: #058BAA}
+.panel-heading.hability-three, .hability-three {background: #086E8B}
+.panel-heading.hability-four, .hability-four {background: #0A4D68}
+.panel-heading.hability-five, .hability-five {background: #CD4325}
+.panel-heading.hability-six, .hability-six {background: #E26428}
+.panel-heading.hability-seven, .hability-seven {background: #F68129}
+.panel-heading.hability-eight, .hability-eight {background: #F49D39}
+.panel-heading.hability-nine, .hability-nine {background: #F1B747}
+.panel-heading.hability-ten, .hability-ten {background: #F0D055}
+.panel-heading.hability-eleven, .hability-eleven {background: #B4C671}
+.panel-heading.hability-twelve, .hability-twelve {background: #79BB8E}
+.panel-heading.hability-thirteen, .hability-thirteen {background: #3DB1AA}
+
+.panel-heading.hability-three,
+.panel-heading.hability-four {
+	color: #FFFFFF;
+	color: rgba(255,255,255,.9);
+}
+
+
+
+/* TYPOGRAPHY */
+
+body {
+	font-family: 'Merriweather', serif;
+}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+
+
+/* HELPERS */
+.block {
+	display: block;
+}
+
+
+
+
+
+/* NAVIGATION */
+#page-navigation {
+	margin-bottom: 0;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#page-navigation .navbar-nav > li > a {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#page-navigation .navbar-brand {
+	background: url(../img/logo.png) left 10px no-repeat;
+	height: 66px;
+	width: 131px;
+	text-indent: -9999px;
+}
+
+
+/* HEADER */
+#page-header {
+	background: url(../img/bg-texture.png);
+	min-height: 20vh;
+	padding: 2vh 0;
+}
+#page-header .page-title h1 {
+	color: #FFFFFF;
+	color: rgba(255,255,255,.75);
+}
+#page-header .page-title__subtitle {
+	color: #EEEEEE;
+	color: rgba(255,255,255,.5);
+}
+#page-header .page-header__breadcrumb {
+	color: #EEEEEE;
+	color: rgba(255,255,255,.2);
+}
+
+
+/* MAIN CONTENT */
+.main {
+	background: #EEEEEE;
+	min-height: calc(80vh - 80px);
+	padding: 3vh 0;
+}
+
+
+	/* MAIN NAVIGATION */
+	#main__navigation {}
+
+	/* MAIN CONTENT */
+	#main__content > .panel{
+		padding: 0 15px;
+	}
+	.main__content__title {
+		margin: 0;
+		padding: 1vh 0;
+	}
+	.main__content__group {
+		margin-bottom: 10vh;
+	}
+	.main__content__group .subhead {
+		color: #999999;
+		margin-bottom: 20px;
+	}
+
+	/* EVALUATION LIST */
+	.evaluation-list {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	.evaluation-list__item {
+		margin-bottom: 2vh;
+	}
+	.evaluation-list__item:last-child {
+		margin-bottom: 0;
+	}
+
+		.evaluation-list__item__link {
+			font-size: 1.8rem;
+			background: #FFFFFF;
+			display: block;
+			padding: 2vh 1vw;
+			box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+			position: relative;
+		}
+		.evaluation-list__item__link:hover {
+			background: #f8f8f8;
+			text-decoration: none;
+			top: -3px;
+		}
+
+
+
+
+
+/* COMPONTENTS */
+
+/* PANELS */
+.panel > div[class^="hability"] {
+	padding: 20px 15px;
+}
+
+
+/* PROGRESS */
+.habilities-list .progress-container {
+  text-align: left;
+  margin-bottom: 60px;
+}
+.progress-container {
+ text-align: center;
+}
+.progress-container h5{
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #EEE;
+}
+.progress-container p, .progress-container p small{
+  color: #999999;
+  line-height: 1.1
+}
+.progress-container p small {
+  display: block;
+}
+.progress-container .progress {
+  margin-bottom: 5px
+}
+.progress-container .progress + p{
+  color: #333;
+  text-align: center;
+}
+
+.progress-container .progress .progress-bar {
+    -moz-animation-name: animateBar;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: .4s;
+
+    -webkit-animation-name: animateBar;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: .4s;
+
+    animation-name: animateBar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .4s;
+}
+
+@-moz-keyframes animateBar {
+    0% {-moz-transform: translateX(-100%);}
+    100% {-moz-transform: translateX(0);}
+}
+@-webkit-keyframes animateBar {
+    0% {-webkit-transform: translateX(-100%);}
+    100% {-webkit-transform: translateX(0);}
+}
+@keyframes animateBar {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
+
+
+
+
+
+
