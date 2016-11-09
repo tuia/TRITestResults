@@ -1,0 +1,470 @@
+
+/********************/
+/*					*/
+/*		MOBILE		*/
+/*					*/
+/********************/
+
+
+/* Código geral, que será herdado por qualquer dispositivos.
+   nesse caso, seria o código usado no desktop, na maioria das vezes. 
+   Se você já conhecer a ideia do Mobile First, esse primeiro código será destinado para mobiles.
+*/
+
+
+/* NAVIGATION */
+#evaluation-navigation {
+	background: #EEEEEE;
+	position: relative;
+	margin: 0;
+	padding: 10px 0;
+}
+#evaluation-navigation .navbar-brand {
+	padding: 5px 15px;
+	margin: 0;
+}
+#evaluation-navigation .navbar-brand .logo {
+	height: 100%;
+}
+#evaluation-navigation .navbar-right {
+	padding: 0 5px 0 0;
+}
+
+/* TIMER */
+.pie-container .dropdown-menu li {
+	padding: 3px 20px;
+}
+#pie-timer {
+	position: relative;
+	bottom: -2px;
+	margin-right: 5px;
+	display: inline-block;
+}
+#pie-timer:before {
+	background: #db0c41;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	border-radius: 20px;
+	content: " ";
+	width: 19px;
+	height: 19px;
+	z-index: 1;
+}
+#pie-timer > canvas {
+	z-index: 2;
+	position: relative;
+}
+
+.pie-container .visible-xs {
+	display: inline-block !important;
+}
+/* USER MENU */
+#navbar .user-menu{
+	padding: 2px 8px;
+	margin: 0;
+	border-right: 1px solid #DDD
+}
+#navbar .user-menu:nth-child(2){
+	border-right: none;
+}
+.user-menu li {
+	display: block;
+	float: none;
+}
+.user-menu .first-name {
+	color: #333;
+	font-weight: 600;
+}
+.user-menu .second-name{
+	color: #999999
+}
+.user-name-container {
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	text-align: center;
+}
+.user-menu .dropdown-toggle .fa {
+	font-size: 2em;
+	float: left;
+	margin: 5px 20px 5px 0;
+}
+
+/* MOBILE NAVIGATION */
+.navbar-toggle {
+	float: left;
+	margin-left: 15px;
+}
+
+
+/* QUESTION NAVIGATION */
+#question-navigation {
+	position: relative;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#question-navigation > .container-fluid {
+	padding: 0;
+}
+#question-navigation .question-nav-container {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 15px;
+}
+#question-navigation .question-nav-container .prev, #question-navigation .question-nav-container .next {
+	position: absolute;
+	top: 7px;
+	display: none;
+}
+#question-navigation .question-nav-container .prev {
+	left: 5px;
+}
+#question-navigation .question-nav-container .next {
+	right: 5px;
+}
+#question-navigation .question-nav-container #question-carousel {
+	margin: 10px auto 0;
+}
+#question-navigation .question-nav-container #question-carousel .item {
+	border-radius: 25px;
+    height: 25px;
+    line-height: 1.2;
+    padding: 5px 0 0;
+    text-align: center;
+    width: 25px;
+}
+#question-navigation .question-nav-container #question-carousel .item a{
+    color: #9E9E9E;
+	font-weight: bold;
+}
+#question-navigation .question-nav-container #question-carousel .item a:hover{
+	color: #333333;
+	text-decoration: none;
+}
+/* questão atual */
+#question-navigation .question-nav-container #question-carousel .item.active{
+	background: #ab0933;
+}
+#question-navigation .question-nav-container #question-carousel .item.active a {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/* questão respondida */
+#question-navigation .question-nav-container #question-carousel .item.completed{
+	background: rgba(134,218,84, .3);
+}
+#question-navigation .question-nav-container #question-carousel .item.completed a {
+	color: #60AA24;
+	font-weight: bold;
+}
+
+
+/* QUESTION */
+.question-container {
+	margin: 0 5vw;
+}
+.question-container .question-title {
+	text-align: center;
+	margin-bottom: 2em;
+	display: none;
+}
+.question-container .question-title h2{
+	font-weight: bold;
+	font-size: 2em;
+}
+
+/* ENUNCIATION */
+.question-container .enunciation {
+	margin-top: 20px;
+}
+
+.question-container .enunciation p {
+	font-family: "Droid Serif", serif;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+}
+.question-container .enunciation p .question-number {
+	font-style: italic;
+	font-size: 1.4em;
+}
+
+/* ALTERNATIVES */
+.alternative-list {
+	margin: 0;
+	padding: 0;
+    list-style-type: none;
+    counter-reset: item;
+}
+.alternative-list li {
+	margin-bottom: 20px;
+}
+.alternative-list li .alternative {
+	padding-left: 45px;
+	position: relative;
+}
+.alternative-list li .alternative:before {
+	background: #666666;
+    border-radius: 40px;
+    color: #FFFFFF;
+    display: list-item;
+    position: absolute;
+	transform: translateY(-50%);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    content: counter(item, lower-latin ) " "; 
+    counter-increment: item;
+    text-transform: uppercase;
+
+    font-size: 16px;
+    line-height: 1.4em;
+    padding: 2px 0 0 2px;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    left: 10px;
+}
+.alternative-list li .alternative-legend {
+	display: block;
+	text-align: center;
+	margin: 0 auto 15px;
+	padding: 8px;
+	font-size: 13px;
+}
+/* alternativa selecionada */
+.alternative-list li.active .alternative {
+	border-color: #aaa;
+	background: #ddd;
+	box-shadow: 0 0 5px rgba(0,0,0,.25) inset;
+}
+.alternative-list li.active .alternative:before {
+	border: 3px solid #999999;
+	padding: 0;
+}
+
+/* form actions */
+.form-actions {
+	background: #EEE;
+	height: auto;
+	overflow: auto;
+	margin: 20px 0 0;
+	padding: 20px 20px 40px;
+}
+
+
+/* QUESTAO DISSERTATIVA */
+.myscript-container {
+	background: #F3F3F3;
+	margin-top: 40px;
+	height: auto;
+	margin-bottom: -20px;
+	padding-bottom: 86px;
+}
+.myscript-container #myscript-input-area{
+	position: relative;
+	z-index: 1
+}
+.myscript-text-web {
+}
+paper-menu-button {
+    padding: 0px;
+    width : 250px;
+}
+
+#text-input {
+    height: calc(200vh + 86px);
+    padding: 0 10%;
+}
+
+canvas[id^=ms-capture-canvas] {
+    position: absolute;
+    z-index: 1;
+}
+
+canvas[id^=ms-rendering-canvas] {
+    position: absolute;
+    z-index: -1;
+    background: url(../img/pauta.png) #FFFFFF repeat !important;
+}
+
+.resultField.myscript-text-web {
+	height: auto !important;
+	padding: 20px 0;
+	min-height: 86px;
+}
+
+/********************/
+/*					*/
+/*		TABLETS		*/
+/*					*/
+/********************/
+
+
+/* 
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+@media screen and (min-width: 768px) {
+
+	/* user menu */
+	#evaluation-navigation .navbar-brand {
+		border-right: 1px solid #DDD;
+	}
+
+	/* espaçamento */
+	.question-container {
+		margin: 0 10vw;
+	}
+  
+	/* enunciado da questao */
+	.question-container .enunciation p {
+		font-size: 1.25em;
+		line-height: 1.5em;
+		margin-bottom: 1.5em;
+	}
+
+	/* titulo da questao */
+	.question-container .question-title h2{
+		font-size: 2.5em;
+	}
+	.question-container .question-title p {
+		font-size: 1.2em;
+	}
+	.question-container .question-title {
+		margin-bottom: 2em
+	}
+
+	/* navegação */
+	#question-navigation {
+		margin-bottom: 20px;
+	}
+	#question-navigation > .container-fluid {
+		padding: 0 15px;
+	}
+	#question-navigation .question-nav-container .prev {
+		left: 20px;
+	}
+	#question-navigation .question-nav-container .next {
+		right: 20px;
+	}
+	.pie-container .visible-xs {
+		display: none !important;
+	}
+
+}
+
+
+
+/********************/
+/*					*/
+/*		DESKTOP		*/
+/*					*/
+/********************/
+
+/* 
+ Com uma largura mínima de 992 pixels. Monitores por exemplo.
+*/
+
+@media screen and (min-width: 992px) {
+
+	/* user menu */
+	.user-menu .first-name { font-size: 18px }
+	.user-menu .second-name{ font-size: 14px }
+	#navbar .user-menu {padding: 2px 15px}
+	
+	/* navegação das questões */
+	#question-navigation .question-nav-container {
+		width: calc(100% - 100px);
+	}
+	#question-navigation .question-nav-container .prev, #question-navigation .question-nav-container .next {
+		display: block;
+	}
+  
+}
+
+
+
+/********************/
+/*					*/
+/*	  TVS & lg		*/
+/*					*/
+/********************/
+
+/* 
+ Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
+*/
+
+
+@media screen and (min-width: 1200px) {
+
+	/* espaçamento */
+	.question-container {
+		margin: 0 25vw;
+	}
+  
+	/* enunciado da questao */
+	.question-container .enunciation p {
+		font-size: 1.45em;
+		line-height: 1.5em;
+		margin-bottom: 1.5em;
+	}
+
+	/* titulo da questao */
+	.question-container .question-title h2{
+		font-size: 3em;
+	}
+	.question-container .question-title p {
+		font-size: 1.3em;
+	}
+	.question-container .question-title {
+		margin: 3em auto
+	}
+
+	/* alternativas */
+	.alternative-list li .alternative:before {
+	    font-size: 18px;
+	    line-height: 1.6em;
+	    width: 35px;
+	    height: 35px;
+	    top: 50%;
+	    left: 20px;
+	}
+	.alternative-list li .alternative {
+		padding-left: 80px;
+	}
+	.alternative-list li .alternative > .img-responsive {
+		max-height: 280px;
+    	margin: 20px auto;
+	}
+
+	/* navegação */
+	#question-navigation > .container-fluid {
+		padding: 0 15px;
+	}
+	#question-navigation .question-nav-container .prev {
+		left: 25px;
+	}
+	#question-navigation .question-nav-container .next {
+		right: 25px;
+	}
+
+	/* rodapé form */
+	.form-actions {
+		padding: 30px 25vw 40px;
+	}
+	.form-actions .btn-lg {
+		padding: 14px 22px;
+		font-size: 20px;
+		margin: 0 15px;
+	}
+
+}
+
+
+
+
+
+
+
+

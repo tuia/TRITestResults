@@ -1,0 +1,80 @@
+
+
+/* typography */
+body,
+.question-container .enunciation p,
+.alternatives-container .alternative-list li .alternative:before {
+  font-size: 10pt;
+  color: #000;
+}
+
+/* links */
+.enunciation a:link { font-weight: bold; text-decoration: underline; color: #06c; } 
+.enunciation a:link:after { content: " (" attr(href) ") "; }
+
+
+/* reset background colors */
+body,
+.alternatives-container .alternative-list .btn:hover,
+.alternatives-container .alternative-list li.active .btn {
+  background: transparent;
+}
+.alternatives-container .alternative-list li.active .btn {
+  box-shadow: none;
+}
+.alternative-list li.active .alternative:before {
+  border: none;
+}
+
+
+/* enlarging content area */
+.container-fluid {
+  padding: 0 5em;
+}
+
+
+
+/* columns */
+.question-container {
+  margin: 0;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40pt; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40pt; /* Firefox */
+  column-gap: 40pt;
+    -webkit-column-rule: 1px solid #DDDDDD; /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid #DDDDDD; /* Firefox */
+  column-rule: 1px solid #DDDDDD;
+}
+
+
+/* page breaks */
+  h2 { 
+    page-break-before: always;
+  }
+  .enunciation {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+
+
+
+/* Alternatives formatting */
+#evaluation-navigation,
+.alternatives-container .alternative-list .btn {
+  border: none;
+  padding: 10pt 30pt;
+}
+.alternatives-container .alternative-list li .alternative:before {
+  background: transparent;
+  color: #333333;
+  font-family: "Droid Serif";
+  content: counter(item, lower-latin) ")";
+  top: 10px;
+  left: 0;
+}
+.alternative-list {
+  width: auto;
+}
